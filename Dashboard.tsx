@@ -1,7 +1,7 @@
 import React from 'react'
 import { SafeAreaView, Text, StyleSheet, View } from 'react-native'
 import { RouteType } from '../routes/RouteType'
-
+import Login from './Login'
 type Props = RouteType<'Dashboard'>
 
 const Dashboard: React.FC<Props> = ({ navigation, route }) => {
@@ -12,6 +12,7 @@ const Dashboard: React.FC<Props> = ({ navigation, route }) => {
             <Text style={{color:'black'}}>Profile</Text>
            <Text style={{color:'black'}}>Orders</Text>
            <Text style={{color:'black'}}>Logout</Text>
+           <Login />
             </View>
         </SafeAreaView>
     )

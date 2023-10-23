@@ -33,6 +33,8 @@ import Login from './Login';
 import Products from './Products';
 import Product from './Product';
 import BottomTab from './BottomTab';
+import TopProducts from './components/TopProducts';
+import FilterProducts from './components/FilterProducts';
 type SectionProps = PropsWithChildren<{
   title: string;
 }>;
@@ -48,6 +50,8 @@ function App(): JSX.Element {
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="BottomTab" component={BottomTab}  options={{headerShown: false}} />
         <Stack.Screen name="Product" component={Product} />
+        <Stack.Screen name="TopProduct" component={TopProducts} />
+        <Stack.Screen name="FilterProducts" component={FilterProducts} />
       </Stack.Navigator>
     </NavigationContainer>
   );

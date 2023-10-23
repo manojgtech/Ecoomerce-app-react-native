@@ -9,12 +9,16 @@ function BottomTab() {
     <Tab.Navigator>
       <Tab.Screen name="Products" options={{
       tabBarLabel: 'Home',
+      headerShown:false,
       tabBarIcon: ({ color, size }) => (
         <Icon name="product-hunt" color={color} size={size} />
       ),
     }} component={Products} />
-      <Tab.Screen name="Dashboard" options={{
+      <Tab.Screen name="Dashboard"
+      
+      options={{
       tabBarLabel: 'Dashboard',
+      headerShown:false,
       tabBarIcon: ({ color, size }) => (
         <Icon name="user" color={color} size={size} />
       ),
